@@ -1,0 +1,23 @@
+theme = "yjydist"
+
+long_uptime = true
+long_shell = true
+long_kernel = true
+current_shell = true
+
+disks = ["/"]
+disk_space_percentage = false
+memory_percentage = true
+
+show = [
+  "OperatingSystem",
+  "Kernel",
+  "DesktopEnvironment",
+  "WindowManager",
+  "Shell",
+  #"Terminal",
+  "Packages",
+  "Memory",
+  "Uptime",
+  "DiskSpace"
+]

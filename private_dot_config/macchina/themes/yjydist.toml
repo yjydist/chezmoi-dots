@@ -1,0 +1,49 @@
+spacing = 1
+padding = 1
+hide_ascii = false
+prefer_small_ascii = true
+separator = " => "
+color = "Blue"
+
+[custom_ascii]
+path = "~/.config/macchina/themes/logo.txt"
+
+[box]
+title = " Yjydist "
+border = "double"
+visible = true
+x = 2
+y = 2
+
+[palette]
+type = "Dark"
+glyph = "    "
+visible = true
+
+[bar]
+glyph = "o"
+symbol_open = '('
+symbol_close = ')'
+visible = false
+
+[randomize]
+key_color = false
+separator_color = false
+
+[keys]
+host="Host"
+kernel="Kernel"
+os = "OS"
+machine = "Machine"
+de = "DE"
+wm = "WM"
+distro = "Distro"
+terminal = "Terminal"
+shell = "Shell"
+packages = "Packages"
+uptime = "Uptime"
+memory = "Memory"
+battery = "Battery"
+cpu = "CPU"
+gpu = "GPU"
+disk_space = "Disk"
