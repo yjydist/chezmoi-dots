@@ -2,21 +2,19 @@ macos-titlebar-proxy-icon = hidden
 title = " "
 #theme = Catppuccin Mocha 
 #theme = Gruvbox Dark Hard
-#theme = Kitty Default
-theme = Rose Pine
+theme = Kitty Default
+#theme = Rose Pine
 #theme = Apple System Colors Light
 #theme = Atom One Light
 #theme = Github Dark High Contrast
 command = /opt/homebrew/bin/fish
 shell-integration = fish
-shell-integration-features = no-cursor
 
-cursor-style-blink = true
+shell-integration-features = no-cursor
 cursor-style = block
 cursor-text = black
 
-# font-family = Rec Mono Custom 
-font-family = Cascadia Code
+font-family = Maple Mono
 font-family = Maple Mono NF CN
 
 
@@ -28,15 +26,20 @@ font-style-bold-italic = false
 font-thicken = true
 font-thicken-strength = 255
 
-font-size = 13.5
+font-synthetic-style = false
+
+font-size = 13
+
+font-thicken = true
 
 window-padding-x = 10
 window-padding-y = 4
 window-width = 120
 window-height = 25
 
-adjust-underline-position = 2
+adjust-underline-position = 7
 adjust-underline-thickness = 1
-adjust-cell-height = 30%
+
+adjust-cell-height = 20%
 # adjust-cell-width = 5%
-adjust-box-thickness = 120%
+adjust-box-thickness = 130%

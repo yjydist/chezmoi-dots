@@ -1,3 +1,9 @@
 #theme = "catppuccin_mocha"
 #theme = "github_dark_high_contrast"
-theme = "rose_pine"
+theme = "base16_default"
+
+[editor.cursor-shape]
+normal = "block"
+insert = "bar"
+select = "block"
+

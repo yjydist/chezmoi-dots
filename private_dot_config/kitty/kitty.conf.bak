@@ -19,7 +19,7 @@ scrollback_lines 5000
 shell /opt/homebrew/bin/fish
 
 # window settings
-window_padding_width 4 8
+window_padding_width 4 10
 remember_window_size  no
 remember_window_position no
 initial_window_width  1000
@@ -34,16 +34,20 @@ font_size 13
 
 # cell width and height settings
 modify_font cell_width 100%
-modify_font cell_height 125%
+modify_font cell_height 120%
 
 # underline settings
-modify_font underline_position 0.4
-modify_font underline_thickness 150%
+# modify_font underline_position 0.4
+modify_font underline_thickness 120%
 
 # BEGIN_KITTY_FONTS
-font_family      family="SF Mono"
-bold_font        auto
-italic_font      auto
-bold_italic_font auto
+font_family      family='Maple Mono' style=Bold
+bold_font        family='Maple Mono' style=Bold
+italic_font      family='Maple Mono' style=Bold
+bold_italic_font family='Maple Mono' style=Bold
 # END_KITTY_FONTS
+symbol_map U+E0A0-U+E0A3,U+E0C0-U+E0C7 PowerlineSymbols
 
+underline_exclusion 10
+box_drawing_scale 1, 2, 2, 2.5
+text_composition_strategy 2 100
