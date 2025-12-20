@@ -1,6 +1,7 @@
 # theme settings
 # include  Catppuccin-Mocha.conf
-include Rosé Pine.conf
+# include Rosé Pine.conf
+include Default.conf
 
 # cursor settings
 cursor_shape block
@@ -37,17 +38,17 @@ modify_font cell_width 100%
 modify_font cell_height 120%
 
 # underline settings
-# modify_font underline_position 0.4
-modify_font underline_thickness 120%
+modify_font underline_position 115%
+modify_font underline_thickness 150%
 
 # BEGIN_KITTY_FONTS
-font_family      family='Maple Mono' style=Bold
-bold_font        family='Maple Mono' style=Bold
-italic_font      family='Maple Mono' style=Bold
-bold_italic_font family='Maple Mono' style=Bold
+font_family      family="Maple Mono"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
 # END_KITTY_FONTS
-symbol_map U+E0A0-U+E0A3,U+E0C0-U+E0C7 PowerlineSymbols
 
-underline_exclusion 10
-box_drawing_scale 1, 2, 2, 2.5
+underline_exclusion 10px
+undercurl_style thick-sparse
+box_drawing_scale 1, 2.2, 2.5, 4
 text_composition_strategy 2 100
