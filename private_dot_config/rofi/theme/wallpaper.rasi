@@ -1,0 +1,86 @@
+/* ~/.config/rofi/wallpaper.rasi */
+@import "shared/colors.rasi"    /* 可选：引入你的颜色方案，如 onedark、gruvbox 等 */
+@import "shared/fonts.rasi"     /* 可选：统一字体 */
+
+* {
+    background: rgba(18, 18, 18, 95%);
+    foreground: #e0e0e0;
+    selected:   #44475a;
+    active:     #6272a4;
+    urgent:     #ff5555;
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 1000px;
+    height: 600px;
+    border-radius: 16px;
+    padding: 20px;
+    background-color: @background;
+}
+
+mainbox {
+    spacing: 10px;
+    padding: 10px;
+}
+
+inputbar {
+    children: [ "prompt", "entry" ];
+    spacing: 10px;
+    padding: 8px;
+    background-color: rgba(30, 30, 30, 90%);
+    border-radius: 8px;
+}
+
+prompt {
+    text-color: @active;
+    font: "Noto Sans 12 bold";
+}
+
+entry {
+    placeholder: "搜索壁纸...";
+    text-color: @foreground;
+    font: "Noto Sans 12";
+}
+
+listview {
+    columns: 4;               /* 4列网格布局 */
+    lines: 3;                 /* 最多显示3行（共12项） */
+    fixed-height: false;
+    dynamic: true;
+    layout: vertical;
+    scrollbar: false;
+    spacing: 12px;
+    padding: 10px;
+}
+
+element {
+    orientation: horizontal;
+    spacing: 8px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: transparent;
+    text-color: @foreground;
+    font: "Noto Sans 10";
+}
+
+element-icon {
+    size: 2.8em;              /* 图标大小（缩略图） */
+}
+
+element-text {
+    text-color: @foreground;
+    ellipsize: end;
+}
+
+element selected.normal {
+    background-color: @selected;
+}
+
+scrollbar {
+    handle-width: 8px;
+    handle-color: @active;
+    background-color: transparent;
+}
